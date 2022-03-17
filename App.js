@@ -1,10 +1,12 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, View } from 'react-native';
+import { useState } from 'react';
+import * as Font from 'expo-font';
+
 import Header from './components/Header';
 import GameScreen from './screens/GameScreen';
 import StartGameScreen from './screens/StartGameScreen';
 import GameOverScreen from './screens/GameOverScreen';
-import { useState } from 'react';
 
 export default function App() {
 	const [userNumber, setUserNumber] = useState(null);
