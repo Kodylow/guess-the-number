@@ -12,6 +12,7 @@ import Colors from '../constants/colors';
 import Input from '../components/Input';
 import NumberContainer from '../components/NumberContainer';
 import { useState } from 'react';
+import BodyText from '../components/BodyText';
 
 const StartGameScreen = ({onStartGame}) => {
 	const [enteredValue, setEnteredValue] = useState('');
@@ -53,7 +54,7 @@ const StartGameScreen = ({onStartGame}) => {
 			<View style={styles.screen}>
 				<Text>Start a new game!</Text>
 				<Card>
-					<Text>Select an Integer:</Text>
+					<BodyText />Select an Integer:</BodyText>
 					<Input
 						style={styles.input}
 						blurOnSubmit
@@ -96,6 +97,7 @@ const styles = StyleSheet.create({
 	title: {
 		fontSize: 20,
 		marginVertical: 20,
+		fontFamily: 'open-sans-bold'
 	},
 	buttonContainer: {
 		flexdirection: 'row',
@@ -113,7 +115,6 @@ const styles = StyleSheet.create({
 	summaryContainer: {
 		marginTop: 20,
 		alignItems: 'center',
-
 	}
 });
 
